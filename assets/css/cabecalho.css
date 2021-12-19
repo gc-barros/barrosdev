@@ -171,7 +171,6 @@
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border: 2px solid rgba(255, 255, 255, 0.103);
         transition: .5s ease all;
-        padding-left: 20px;
     }
 
     .cabecalho__menu.cabecalho__menu--ativo {
