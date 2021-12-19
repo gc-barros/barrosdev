@@ -58,31 +58,41 @@
     font-weight: 600;
     margin-right: 48px;
     position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 
 .cabecalho__link--projetos {
     margin-right: 0;
 }
+
 .cabecalho__link::before {
     content: '';
     display: inline-block;
-    width: 22px;
+    width: 20px;
     height: 20px;
     margin-right: 8px;
     background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
     transition: .5s ease all; 
+    position: relative;
+}
+
+.cabecalho__link--sobre::before {
+    top: -2px;
 }
 
 .cabecalho__link--habilidades::before {
     background-image: url(../../assets/img/icons/habilidades.svg);
-    width: 21px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
+    top: -1px;
 }
 
 .cabecalho__link--projetos::before {
     background-image: url(../../assets/img/icons/projetos.svg);
     width: 20px;
-    height: 18px;
+    height: 20px;
+    top: -2px;
 }
 
 .cabecalho__link--contato {
@@ -91,7 +101,7 @@
 
 .cabecalho__link--contato::before {
     background-image: url(../../assets/img/icons/contato.svg);
-    width: 20px;
+    width: 21px;
     height: 18px;
     transition: .5s ease all; 
 }
@@ -118,7 +128,7 @@
 
 .cabecalho__hamburguer {
     display: none;
-    background: none;
+    background: transparent;
     border: none;
     font-size: 28px;
     cursor: pointer;
@@ -149,18 +159,19 @@
         display: flex;
         position: fixed;
         flex-flow: column wrap;
-        right: -200px;
+        right: -220px;
         top: 81px;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-evenly;
         height: 360px;
-        width: 180px;
+        width: 216px;
         background: var(--gradient);
         box-sizing: border-box;
         border-bottom-left-radius: 8px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border: 2px solid rgba(255, 255, 255, 0.103);
         transition: .5s ease all;
+        padding-left: 20px;
     }
 
     .cabecalho__menu.cabecalho__menu--ativo {
@@ -174,7 +185,7 @@
     }
 
     .cabecalho__link--contato {
-        display: inline;
+        display: block;
     }
 
     .cabecalho__link--contato::before {

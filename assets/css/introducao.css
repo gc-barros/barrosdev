@@ -1,5 +1,4 @@
 .introducao {
-    /* align-items: center; */
     padding: 0 16px;
     padding-top: 100px;
     height: 560px;
@@ -62,11 +61,11 @@
     .introducao {
         grid-template-columns: 1fr;
         justify-content: center;
-        height: calc(100vh - 240px);
         padding-top: 240px;
         background-size: 500px;
         background-position: center bottom -110px;
         background-attachment: unset;
+        height: 780px;
     }
     
     .introducao__texto,
@@ -90,10 +89,10 @@
     .introducao {
         grid-template-columns: 1fr;
         justify-content: center;
-        height: calc((var(--vh, 1vh) * 100) - 160px);
-        padding-top: 160px;
+        padding-top: 140px;
         background-size: 320px;
         background-position: center bottom -72px;
+        height: 580px;
     }
 
     .introducao__decoracao {
