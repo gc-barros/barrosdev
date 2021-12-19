@@ -27,7 +27,7 @@ body {
 }
 
 .container-principal {
-    background: url(../../assets/img/apetrechos/luz.svg) no-repeat;
+    background: url(../../assets/img/apetrechos/luz.png) no-repeat;
     background-position: -240px top;
     height: 200vh;
 }

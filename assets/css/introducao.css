@@ -25,7 +25,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
-    max-width: 493px;
+    max-width: 540px;
     margin-top: 24px;
     margin-bottom: 32px;
 }
@@ -33,7 +33,7 @@
 .introducao__texto {
     padding: 32px;
     max-width: 656px;
-    height: 340px;
+    height: fit-content;
     border-radius: 24px;
     grid-column: 2;
     position: relative;
@@ -61,27 +61,27 @@
     .introducao {
         grid-template-columns: 1fr;
         justify-content: center;
-        height: 810px;
-        padding-top: 180px;
-        background-size: 500px;
-        background-position: center 600px;
+        height: calc(100vh - 120px);
+        padding-top: 120px;
+        background-size: 320px;
+        background-position: center bottom -72px;
     }
 
     .introducao__texto,
     .introducao__decoracao {
         grid-column: 1;
+        grid-auto-rows: 1;
     }
 
     .introducao__texto {
         justify-self: center;
+        max-width: 484px;
     }
 
     .introducao__decoracao {
         display: none;
     }
-}
 
-@media screen and (max-width: 767px) {
     .introducao__titulo {
         font-size: 28px;
     }
@@ -93,6 +93,7 @@
     }
 
     .introducao__texto {
-        padding: 16px;
+        padding: 24px;
+        height: fit-content;
     }
 }
