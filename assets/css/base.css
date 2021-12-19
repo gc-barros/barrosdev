@@ -1,0 +1,37 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
+
+/* Reset CSS */
+@import url(../css/reset.css);
+@import url(../css/normalize.css);
+@import url(../css/componentes.css);
+
+/* Variáveis */
+:root {
+    /* Cores */
+    --gradient: linear-gradient(45deg, #4070F4 0%, #2BD67B 100%); 
+    --branco: #FFFFFF;
+    --preto: #040413;
+
+    /* Tipografia */
+    --epilogue: 'Epilogue', sans-serif;
+
+    /* Ícones */
+    --sobre-mim: "\efb1";
+}
+
+body {
+    background: var(--preto);
+    font-family: var(--epilogue);
+    color: var(--branco);
+}
+
+.container-principal {
+    background: url(../../assets/img/apetrechos/luz.svg) no-repeat;
+    background-position: -240px top;
+    height: 200vh;
+}
+
+.conteudo {
+    overflow-x: hidden;
+}

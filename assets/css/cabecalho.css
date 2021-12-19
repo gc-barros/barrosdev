@@ -1,0 +1,99 @@
+.cabecalho {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+.cabecalho__logo {
+    display: block;
+    padding-left: 4px;
+}
+
+.cabecalho-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 1124px;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.botao-contato {
+    width: 150px;
+    background-image: url(../../assets/img/apetrechos/botao-contato.png);
+}
+
+.texto-contato {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.texto-contato::before {
+    content: '';
+    background: url(../../assets/img/icons/contato.svg) no-repeat center / contain;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    color: aliceblue;
+    margin-right: 8px;
+    position: relative;
+    bottom: -2px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 600;
+    margin-right: 48px;
+}
+
+.cabecalho__link--projetos {
+    margin-right: 0;
+}
+.cabecalho__link::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    margin-right: 8px;
+    background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
+}
+
+.cabecalho__link--habilidades::before {
+    background-image: url(../../assets/img/icons/habilidades.svg);
+    width: 21px;
+    height: 19px;
+}
+
+.cabecalho__link--projetos::before {
+    background-image: url(../../assets/img/icons/projetos.svg);
+    width: 20px;
+    height: 18px;
+}
+
+.cabecalho__hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 1023px) {
+    .cabecalho__navegacao,
+    .botao-contato {
+        display: none;
+    }
+
+    .cabecalho__hamburguer {
+        display: flex;
+        align-items: center;
+    }
+}

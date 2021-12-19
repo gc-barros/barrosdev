@@ -1,0 +1,98 @@
+.introducao {
+    /* align-items: center; */
+    padding: 0 16px;
+    padding-top: 100px;
+    height: 560px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1124px 1fr;
+    background: url(../../assets/img/barros.png) no-repeat fixed;
+    background-position: calc(50% + 360px) 120px;
+}
+
+.introducao__titulo {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120%;
+}
+
+.introducao__titulo > .texto-gradient {
+    font-weight: 800;
+}
+
+.introducao__corpo {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    max-width: 493px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.introducao__texto {
+    padding: 32px;
+    max-width: 656px;
+    height: 340px;
+    border-radius: 24px;
+    grid-column: 2;
+    position: relative;
+    z-index: 2;
+}
+
+.introducao__decoracao {
+    position: relative;
+    grid-column: 2;
+}
+.introducao__decoracao::before,
+.introducao__decoracao::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 43px;
+    left: -72px;
+    width: 155px;
+    height: 152px;
+    background: url(../../assets/img/apetrechos/pontilhado1.svg) no-repeat center / contain;
+}
+
+@media screen and (max-width: 1023px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        height: 810px;
+        padding-top: 180px;
+        background-size: 500px;
+        background-position: center 600px;
+    }
+
+    .introducao__texto,
+    .introducao__decoracao {
+        grid-column: 1;
+    }
+
+    .introducao__texto {
+        justify-self: center;
+    }
+
+    .introducao__decoracao {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .introducao__titulo {
+        font-size: 28px;
+    }
+
+    .introducao__corpo {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .introducao__texto {
+        padding: 16px;
+    }
+}
