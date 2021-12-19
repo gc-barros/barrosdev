@@ -86,7 +86,7 @@
     backdrop-filter: blur(30px);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
     .caixa-botao > .botao {
         box-sizing: border-box;
         width: 140px;

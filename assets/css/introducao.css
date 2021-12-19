@@ -57,7 +57,35 @@
     background: url(../../assets/img/apetrechos/pontilhado1.svg) no-repeat center / contain;
 }
 
+
 @media screen and (max-width: 1023px) {
+    .introducao {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        height: calc(100vh - 240px);
+        padding-top: 240px;
+        background-size: 500px;
+        background-position: center bottom -110px;
+    }
+    
+    .introducao__texto,
+    .introducao__decoracao {
+        grid-column: 1;
+        grid-auto-rows: 1;
+    }
+    
+    .introducao__decoracao {
+        position: absolute;
+        left: calc(50% - 335px);
+        top: 130px;
+    }
+
+    .introducao__texto {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .introducao {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -67,33 +95,26 @@
         background-position: center bottom -72px;
     }
 
-    .introducao__texto,
-    .introducao__decoracao {
-        grid-column: 1;
-        grid-auto-rows: 1;
-    }
-
-    .introducao__texto {
-        justify-self: center;
-        max-width: 484px;
-    }
-
     .introducao__decoracao {
         display: none;
     }
-
+    
     .introducao__titulo {
         font-size: 28px;
     }
-
+    
     .introducao__corpo {
         font-size: 14px;
         margin-top: 16px;
         margin-bottom: 24px;
     }
-
+    
     .introducao__texto {
         padding: 24px;
         height: fit-content;
+    }
+
+    .introducao__texto {
+        max-width: 484px;
     }
 }
