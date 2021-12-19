@@ -7,6 +7,12 @@
 .cabecalho__logo {
     display: block;
     padding-left: 4px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.cabecalho__logo:hover {
+    filter: brightness(1.4);
 }
 
 .cabecalho-container {
@@ -51,6 +57,7 @@
     color: var(--branco);
     font-weight: 600;
     margin-right: 48px;
+    position: relative;
 }
 
 .cabecalho__link--projetos {
@@ -63,6 +70,7 @@
     height: 20px;
     margin-right: 8px;
     background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
+    transition: .5s ease all; 
 }
 
 .cabecalho__link--habilidades::before {
@@ -77,6 +85,37 @@
     height: 18px;
 }
 
+.cabecalho__link--contato {
+    display: none;
+}
+
+.cabecalho__link--contato::before {
+    background-image: url(../../assets/img/icons/contato.svg);
+    width: 20px;
+    height: 18px;
+    transition: .5s ease all; 
+}
+
+.cabecalho__link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    bottom: -8px;
+    position: absolute;
+    background: var(--gradient);
+    transition: .5s ease all; 
+}
+
+.cabecalho__link:hover::after {
+    width: 60px;
+    filter: brightness(1.4);
+}
+
+.cabecalho__link:hover::before {
+    filter: brightness(1.4);
+}
+
 .cabecalho__hamburguer {
     display: none;
     background: none;
@@ -86,14 +125,69 @@
     color: var(--branco);
 }
 
+.cabecalho__hamburguer > i {
+    padding: 4px;
+}
+
 @media screen and (max-width: 1023px) {
-    .cabecalho__navegacao,
+    .cabecalho__menu,
     .botao-contato {
         display: none;
+    }
+
+    .cabecalho__navegacao {
+        overflow-y: hidden;
     }
 
     .cabecalho__hamburguer {
         display: flex;
         align-items: center;
+        order: 3;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        position: fixed;
+        flex-flow: column wrap;
+        right: -200px;
+        top: 81px;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 360px;
+        width: 180px;
+        background: var(--gradient);
+        box-sizing: border-box;
+        border-bottom-left-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 2px solid rgba(255, 255, 255, 0.103);
+        transition: .5s ease all;
+    }
+
+    .cabecalho__menu.cabecalho__menu--ativo {
+        right: 0;
+    }
+
+    .cabecalho__link {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 16px 32px;
+    }
+
+    .cabecalho__link--contato {
+        display: inline;
+    }
+
+    .cabecalho__link--contato::before {
+        position: relative;
+        bottom: -2px;
+    }
+
+    .cabecalho__link--habilidades::before {
+        position: relative;
+        bottom: -2px;
+    }
+
+    .cabecalho__link::before {
+        filter: brightness(10);
     }
 }

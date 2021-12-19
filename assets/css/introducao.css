@@ -66,6 +66,7 @@
         padding-top: 240px;
         background-size: 500px;
         background-position: center bottom -110px;
+        background-attachment: unset;
     }
     
     .introducao__texto,
@@ -89,8 +90,8 @@
     .introducao {
         grid-template-columns: 1fr;
         justify-content: center;
-        height: calc(100vh - 120px);
-        padding-top: 120px;
+        height: calc((var(--vh, 1vh) * 100) - 160px);
+        padding-top: 160px;
         background-size: 320px;
         background-position: center bottom -72px;
     }
