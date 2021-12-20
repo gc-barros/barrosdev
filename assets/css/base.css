@@ -20,10 +20,15 @@
     --sobre-mim: "\efb1";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: var(--preto);
     font-family: var(--epilogue);
     color: var(--branco);
+    scroll-behavior: smooth;
 }
 
 .container-principal {
