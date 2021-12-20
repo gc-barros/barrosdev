@@ -32,8 +32,9 @@ body {
 }
 
 .container-principal {
-    background: url(../../assets/img/apetrechos/luz.png) no-repeat;
-    background-position: -240px top;
+    background-image: url(../../assets/img/apetrechos/luz.png), url(../../assets/img/apetrechos/luz2.png);
+    background-repeat: no-repeat;
+    background-position: -240px top, right 900px;
     height: 200vh;
 }
 
