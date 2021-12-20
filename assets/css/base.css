@@ -34,8 +34,7 @@ body {
 .container-principal {
     background-image: url(../../assets/img/apetrechos/luz.png), url(../../assets/img/apetrechos/luz2.png);
     background-repeat: no-repeat;
-    background-position: -240px top, right 900px;
-    height: 200vh;
+    background-position: -240px top, right 500px;
 }
 
 .conteudo {
