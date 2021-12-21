@@ -9,6 +9,7 @@
     padding-left: 4px;
     cursor: pointer;
     transition: .5s ease all;
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
 }
 
 .cabecalho__logo:hover {
@@ -28,6 +29,7 @@
 .botao-contato {
     width: 150px;
     background-image: url(../../assets/img/apetrechos/botao-contato.png);
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
 }
 
 .texto-contato {
@@ -60,6 +62,7 @@
     position: relative;
     display: flex;
     align-items: flex-end;
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
 }
 
 .cabecalho__link--projetos {
