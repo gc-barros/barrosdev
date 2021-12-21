@@ -8,8 +8,8 @@
     display: block;
     padding-left: 4px;
     cursor: pointer;
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px), brightness(0);
     transition: .5s ease all;
-    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
 }
 
 .cabecalho__logo:hover {
@@ -29,7 +29,7 @@
 .botao-contato {
     width: 150px;
     background-image: url(../../assets/img/apetrechos/botao-contato.png);
-    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px), brightness(0);
 }
 
 .texto-contato {
