@@ -99,16 +99,18 @@
     height: 12px;
     width: 100%;
     margin-top: 32px;
-
+    
 }
 
 .projetos__carrossel--indicador {
+    border: none;
     width: 12px;
     height: 12px;
     background-color: var(--branco);
     border-radius: 24px;
     margin: 0 12px;
     opacity: 0.4;
+    cursor: pointer;
 }
 
 .projetos__carrossel--indicador:first-of-type {

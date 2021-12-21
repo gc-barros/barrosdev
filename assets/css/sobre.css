@@ -15,6 +15,10 @@
     margin-bottom: 80px;
 }
 
+.sobre__container > .titulo-secao {
+    margin-bottom: 24px;
+}
+
 .sobre::before {
     content: url(../../assets/img/apetrechos/tracejado1.svg);
     position: absolute;
@@ -343,7 +347,7 @@
     }
 
     .sobre__chamada--imagem {
-        width: 90px;
+        display: none;
     }
 
     .sobre__chamada {
