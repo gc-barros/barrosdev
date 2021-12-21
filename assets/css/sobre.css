@@ -223,6 +223,26 @@
     transform: scale(1.2);
 }
 
+.sobre__cinto--tech > img {
+    transition: .5s ease all;
+}
+
+.sobre__cinto--tech > span {
+    transition: .8s ease all;
+    position: absolute;
+    opacity: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+}
+
+.sobre__cinto--tech:hover > img {
+    opacity: 0;
+}
+
+.sobre__cinto--tech:hover > span {
+    opacity: 1;
+}
+
 .sobre__chamada {
     display: flex;
     flex-direction: column;
@@ -347,5 +367,9 @@
 
     .sobre__quote--texto::after {
         display: none;
+    }
+
+    .sobre__cinto--tech > span {
+        font-size: 12px;
     }
 }
