@@ -1,0 +1,128 @@
+.habilidades {
+    background: var(--gradient);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    padding: 88px 16px;
+}
+
+.habilidades__intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.habilidades__texto {
+    max-width: 552px;
+    line-height: 160%;
+    margin-right: 48px;
+}
+
+.habilidades__texto > .titulo-secao {
+    margin-bottom: 32px;
+    text-align: left;
+}
+.habilidades__texto > .titulo-secao::before {
+    background-image: url(../../assets/img/icons/habilidades-white.svg);
+    height: 42px;
+    width: 47px;
+    bottom: -6px;
+}
+
+.habilidades__cards {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.habilidades__cards::before {
+    content: url(../../assets/img/apetrechos/pontilhado4.svg);
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 560px);
+}
+
+.habilidades__cards::after {
+    content: url(../../assets/img/apetrechos/tracejado2.svg);
+    position: absolute;
+    z-index: 1;
+    bottom: -72px;
+    right: calc(50% - 560px);
+}
+
+.habilidades__card {
+    padding: 24px;
+    background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.1) 3.44%, rgba(255, 255, 255, 0.04) 64.82%);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    max-width: 293px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .4s ease all;
+    position: relative;
+    z-index: 2;
+}
+
+.habilidades__card:hover {
+    transform: scale(1.1);
+}
+
+.habilidades__card--principal {
+    margin: 0 46px;
+    padding: 24px;
+}
+
+.habilidades__card--titulo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.habilidades__card--titulo::before {
+    content: url(../../assets/img/icons/icon-card1.svg);
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.habilidades__card:nth-of-type(2) .habilidades__card--titulo::before {
+    content: url(../../assets/img/icons/icon-card2.svg);
+}
+
+.habilidades__card:nth-of-type(3) .habilidades__card--titulo::before {
+    content: url(../../assets/img/icons/icon-card3.svg);
+}
+
+.habilidades__card--descricao {
+    margin: 20px 0;
+    font-weight: 300;
+    line-height: 160%;
+    font-size: 14px;
+}
+
+.habilidades__card--botao {
+    background: none;
+    border-color: var(--branco);
+    color: var(--branco);
+    width: 100%;
+}
+
+.habilidades__card--botao:hover {
+    transform: scale(1.05);
+    filter: none;
+}
+
+.habilidades__card--principal .habilidades__card--titulo  {
+    font-size: 20px;
+}
+
+.habilidades__card--principal .habilidades__card--descricao  {
+    font-size: 15px;
+}
+
+.habilidades__card--principal .habilidades__card--botao  {
+    background-color: var(--branco);
+    color: #3F9CC5;
+}
+

@@ -12,6 +12,7 @@
     max-width: 1280px;
     margin: auto;
     padding: 88px 24px 0 24px;
+    margin-bottom: 80px;
 }
 
 .sobre::before {
@@ -342,7 +343,7 @@
     }
 
     .sobre__chamada--imagem {
-        display: none;
+        width: 90px;
     }
 
     .sobre__chamada {

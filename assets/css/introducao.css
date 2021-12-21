@@ -43,6 +43,7 @@
     position: relative;
     grid-column: 2;
 }
+
 .introducao__decoracao::before,
 .introducao__decoracao::after {
     content: '';
