@@ -85,7 +85,7 @@
 
 /* slightly transparent fallback */
 .vidro {
-    background-color: rgba(7, 19, 28, 0.7);
+    background-color: rgba(12, 35, 46, 0.7);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
 }
@@ -117,6 +117,21 @@
     .caixa-botao > .botao-secundario {
         background-image: url(../../assets/img/apetrechos/botao767.png);
         margin-left: 8px;
+    }
+
+    .titulo-secao {
+        font-size: 28px;
+    }
+
+    .subtitulo-secao {
+        font-size: 18px;
+    }
+
+    .titulo-secao::before,
+    .subtitulo-secao::before {
+        width: 40px;
+        height: 34px;
+        margin-right: 14px;
     }
 
 }

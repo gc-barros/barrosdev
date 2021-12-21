@@ -4,6 +4,7 @@
         url(../../assets/img/apetrechos/circulo.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: calc(50% - 640px) 500px, calc(50% + 640px) 2200px;
+    position: relative;
 }
 
 .sobre__container {
@@ -13,7 +14,15 @@
     padding: 88px 24px 0 24px;
 }
 
-.sobre__container > div {
+.sobre::before {
+    content: url(../../assets/img/apetrechos/tracejado1.svg);
+    position: absolute;
+    z-index: -1;
+    left: calc(50% - 340px);
+    top: -90px;
+}
+
+.sobre__container > div:not(.sobre__chamada) {
     padding: 72px 0;
 }
 
@@ -62,7 +71,7 @@
 
 .sobre__ficha {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
@@ -167,6 +176,13 @@
     justify-content: center;
 }
 
+.sobre__cinto--conteudo > .subtitulo-secao::before {
+    background-image: url(../../assets/img/icons/ferramentas.svg);
+    width: 32px;
+    height: 32px;
+    top: 1px;
+}
+
 .sobre__cinto--imagem {
     display: block;
     margin-right: 80px;
@@ -214,6 +230,7 @@
     justify-content: center;
     max-width: 560px;
     margin: auto;
+    padding: 72px 0;
 }
 
 .sobre__chamada--texto {
@@ -229,4 +246,106 @@
     margin-bottom: 16px;
     position: relative;
     left: -5px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .sobre {
+        background-position: calc(50% - 380px) 420px, calc(50% + 380px) 3080px;
+    }
+
+    .sobre::before {
+        display: none;
+    }
+
+    .sobre__apresentacao,
+    .sobre__ficha,
+    .sobre__quote,
+    .sobre__cinto--container {
+        flex-direction: column;
+    }
+
+    .sobre__apresentacao--avatar,
+    .sobre__ficha--avatar,
+    .sobre__quote--avatar,
+    .sobre__cinto--imagem {
+        margin: 0;
+        margin-top: 56px;
+    }
+
+    .sobre__apresentacao::before,
+    .sobre__apresentacao::after {
+        display: none;
+    }
+
+    .sobre__ficha--avatar,
+    .sobre__cinto--imagem {
+        order: 2;
+    }
+
+    .sobre__quote--texto {
+        max-width: 660px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sobre__container {
+        padding: 56px 24px 0 24px;
+    }
+
+    .sobre__container > div:not(.sobre__chamada) {
+        padding: 56px 0;
+    }
+
+    .sobre__apresentacao--avatar,
+    .sobre__ficha--avatar,
+    .sobre__quote--avatar,
+    .sobre__cinto--imagem {
+        width: 180px;
+        margin-top: 40px;
+    }
+
+    .sobre__card,
+    .sobre__quote--texto,
+    .sobre__cinto--texto,
+    .sobre__chamada--texto {
+        font-size: 14px;
+    }
+
+    .sobre__card {
+        width: 100%;
+        line-height: 160%;
+    }
+
+    .sobre__hello--code {
+        font-size: 18px;
+    }
+
+    .sobre__chamada--imagem {
+        display: none;
+    }
+
+    .sobre__chamada {
+        padding-top: 0;
+        padding-bottom: 56px;
+    }
+
+    .sobre__cinto--techs {
+        justify-content: flex-start;
+    }
+
+    .sobre__cinto--tech {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+    }
+
+    .sobre__cinto--tech > img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .sobre__quote--texto::after {
+        display: none;
+    }
 }

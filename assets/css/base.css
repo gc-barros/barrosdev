@@ -43,3 +43,15 @@ body {
 .conteudo {
     overflow-x: hidden;
 }
+
+@media screen and (max-width: 1023px) {
+    .container-principal {
+        background-position: -240px top, right 800px, left 2800px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-principal {
+        background-position: -240px top, right 280px, left 1800px;
+    }
+}
