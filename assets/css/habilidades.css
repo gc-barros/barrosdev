@@ -17,6 +17,10 @@
     margin-right: 48px;
 }
 
+.habilidades__corpo {
+    font-size: 18px;
+}
+
 .habilidades__texto > .titulo-secao {
     margin-bottom: 32px;
     text-align: left;
@@ -174,10 +178,6 @@
         padding: 56px 24px;
     }
 
-    .habilidades .titulo-secao {
-        text-align: center;
-    }
-
     .habilidades__card--principal {
         order: -1;
     }
@@ -187,7 +187,7 @@
     }
 
     .habilidades__corpo {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .habilidades__cards::before, .habilidades__cards::after {

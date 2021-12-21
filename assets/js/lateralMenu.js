@@ -13,6 +13,7 @@ function menuLateralInit() {
 
         if (targetElement != hamburguer && targetElement != menu) {
             menu.classList.remove("cabecalho__menu--ativo");
+            hamburguer.classList.remove("texto-gradient");
         }
     });
 }
