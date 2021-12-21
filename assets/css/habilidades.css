@@ -189,4 +189,8 @@
     .habilidades__corpo {
         font-size: 14px;
     }
+
+    .habilidades__cards::before, .habilidades__cards::after {
+        display: none;
+    }
 }
