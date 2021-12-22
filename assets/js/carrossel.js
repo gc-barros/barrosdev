@@ -6,58 +6,67 @@ function carrosselInit() {
     const titulo = "[data-projeto='titulo']"
     const link = "[data-projeto='link']"
     const detalhes = "[data-projeto='detalhes']"
+    const botaoVisitar = "[data-botao='visitar']"
+    const botaoRepositorio = "[data-botao='repositorio']"
 
-    const dadosProjetos = {
-        bluewand: [
+    const dados = {
+        projetos: [
             {
                 titulo: "Blue Wand",
                 link: "https://bluewand.vercel.app",
+                repositorio: "https://github.com/gc-barros/blue-wand",
                 detalhes:
                     "Landing page da Blue Wand, um grupo 100% maranhense de apoio a homens acometidos por câncer de pênis. Projeto desenvolvido em grupo, durante o primeiro desafio integrado do Programa Trilhas (Inova Maranhão).",
-            }
-        ],
-        porelas: [
+            },
             {
                 titulo: "Por Elas",
                 link: "https://porelas.ong.br",
+                repositorio: "https://github.com/gc-barros/por-elas",
                 detalhes:
                     "Website do Por Elas, um projeto fantástico que mobiliza pessoas e realiza ações para mulheres em São Luís – MA. Landing page construída por um grupo de programadores do Programa Trilhas (Inova Maranhão).",
-            }
-        ],
-        eguassiow: [
+            },
             {
                 titulo: "Éguas, Siow!",
                 link: "https://eguassiow.netlify.app",
+                repositorio: "https://github.com/gc-barros/2-workshop-trilhas",
                 detalhes:
-                    'Site desenvolvido de forma individual, durante o 1º Workshop Trilhas, com o objetivo de promover a cultura do Estado do Maranhão, exaltando as suas belezas, encantos e diversidade.'
-            }
-        ],
-        petplanet: [
+                    "Site desenvolvido de forma individual, durante o 1º Workshop Trilhas, com o objetivo de promover a cultura do Estado do Maranhão, exaltando as suas belezas, encantos e diversidade.",
+            },
             {
                 titulo: "Pet Planet",
                 link: "https://petplanet.netlify.app/",
+                repositorio: "https://github.com/gc-barros/pet-planet",
                 detalhes:
                     'Projeto de uma clínica petshop fictícia, com telas de início, quem somos, serviços, fale conosco, login e cadastro. Desenvolvido em grupo, durante a disciplina de "Projeto e Desenvolvimento de Software" (somente front-end).',
-            }
-        ],
-        petplanetuser: [
+            },
             {
                 titulo: "Pet Planet | Usuário",
                 link: "https://petplanet.netlify.app/07-user-page.html",
+                repositorio: "https://github.com/gc-barros/pet-planet",
                 detalhes:
                     "Páginas internas da clínica Pet Planet, para as quais os usuários seriam direcionados após o login, com acesso a telas navegáveis de início, produtos, serviços e agenda (back-end não integrado).",
-            }
+            },
         ],
     };
 
-    let carrossel = new Carousel(botaoAnterior, botaoProximo, listaProjetos, navegacao, titulo, link, detalhes, dadosProjetos);
-
+    let carrossel = new Carousel(botaoAnterior, botaoProximo, listaProjetos, navegacao, titulo, link, detalhes, dados, botaoVisitar, botaoRepositorio);
 }
 
 export default carrosselInit;
 
 class Carousel {
-    constructor(anterior, proximo, listaProdutos, navegacao, titulo, link, detalhes, dados) {
+    constructor(
+        anterior,
+        proximo,
+        listaProdutos,
+        navegacao,
+        titulo,
+        link,
+        detalhes,
+        dados,
+        botaoVisitar,
+        botaoRepositorio
+    ) {
         this.anterior = document.querySelector(anterior);
         this.proximo = document.querySelector(proximo);
         this.listaProdutos = document.querySelector(listaProdutos);
@@ -67,6 +76,9 @@ class Carousel {
         this.link = document.querySelector(link);
         this.detalhes = document.querySelector(detalhes);
         this.dados = dados;
+
+        this.botaoVisitar = document.querySelector(botaoVisitar);
+        this.botaoRepositorio = document.querySelector(botaoRepositorio);
 
         this.slides = this.getListaSlides();
         this.indicadores = this.getListaIndicadores();
@@ -161,11 +173,16 @@ class Carousel {
     }
 
     renderizarDescricao() {
-        const lista = ['bluewand', 'porelas', 'eguassiow', 'petplanet', 'petplanetuser']
-        this.titulo.innerText = this.dados[lista[this.indiceDoSlideAtual]][0]['titulo'];
-        let linkProjeto = this.dados[lista[this.indiceDoSlideAtual]][0]['link']
+        let i = this.indiceDoSlideAtual;
+        let linkProjeto = this.dados.projetos[i].link;
+        let linkRepositorio = this.dados.projetos[i].repositorio;
+
+        this.titulo.innerText = this.dados.projetos[i].titulo;
         this.link.innerText = linkProjeto;
-        this.link.setAttribute('href', linkProjeto);
-        this.detalhes.innerText = this.dados[lista[this.indiceDoSlideAtual]][0]['detalhes'];
+        this.link.setAttribute("href", linkProjeto);
+        this.detalhes.innerText = this.dados.projetos[i].detalhes;
+
+        this.botaoVisitar.setAttribute("onclick", `window.open('${linkProjeto}', '_blank');`);  
+        this.botaoRepositorio.setAttribute("onclick", `window.open('${linkRepositorio}', '_blank');`);  
     }
 }
