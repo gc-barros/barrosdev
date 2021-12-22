@@ -1,0 +1,33 @@
+.citacao {
+    border-radius: 24px;
+    background: var(--gradient);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    max-width: 1256px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.citacao__frase {
+    max-width: 431px;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 1024px) {
+    .citacao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .citacao__logo {
+        width: 200px;
+    }
+
+    .citacao__frase {
+        margin-top: 40px;
+    }
+}
