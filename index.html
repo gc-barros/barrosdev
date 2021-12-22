@@ -43,6 +43,7 @@
      <link rel="stylesheet" href="assets/css/habilidades.css">
      <link rel="stylesheet" href="assets/css/projetos.css">
      <link rel="stylesheet" href="assets/css/citacao.css">
+     <link rel="stylesheet" href="assets/css/contato.css">
  </head>
  <body>
      <div class="container-principal">
@@ -284,7 +285,56 @@
                  <q class="citacao__frase">Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer. <br><strong>- Alan Turing</strong></q>
              </aside>
 
+             <section class="contato">
+                <div class="contato__container vidro">
+                    <form action="https://formsubmit.co/33c2e220200913dc0ef7ee8106b6773e" method="POST" class="contato__formulario">
+                        <h2 class="titulo-secao">Contato</h2>
+
+                        <input type="hidden" name="_autoresponse" value="BarrosDEV | Olá, recebi a sua mensagem! Em breve estarei entrando em contato, abraços. ;)">
+
+                        <div class="input-wrp">
+                            <input type="text" name="name" id="name" class="contato__formulario--campo" data-campo="nome" required>
+                            <label for="name" class="contato__formulario--label" data-label="nome">Nome</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input type="text" id="email" class="contato__formulario--campo" data-campo="email" required>
+                            <label for="email" class="contato__formulario--label" data-label="email">E-mail</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input type="text" name="_subject" id="assunto" class="contato__formulario--campo" data-campo="assunto" required>
+                            <label for="assunto" class="contato__formulario--label" data-label="assunto">Assunto</label>
+                        </div>
+                        <div class="input-wrp textarea">
+                            <textarea id="message" name="message" class="contato__formulario--campo" data-campo="mensagem" required></textarea>
+                            <label for="message" class="contato__formulario--label" data-label="mensagem">Mensagem</label>
+                        </div>
+
+                        <button type="submit" class="botao botao-primario">Enviar</button>
+                    </form>
+
+                    <div class="contato__texto">
+                        <h3 class="subtitulo-secao">Vamos bater um papo?</h3>
+                        <p class="contato__corpo">Estou sempre aberto ao diálogo, troca de ideias e novas conexões! Posso te ajudar de alguma forma? Sinta-se à vontade para entrar em contato comigo por meio do formulário ou através das minhas redes sociais:</p>
+                        <ul class="contato__redes">
+                            <li class="contato__rede">
+                                <a href="https://www.linkedin.com/in/gabriel-b-526ab7127/" title="Linkedin" target="_blank" rel="noreferrer"><i class="ri-linkedin-box-fill"></i></a>
+                            </li>
+                            <li class="contato__rede">
+                                <a href="https://www.instagram.com/gabri.elbarros/" title="Instagram" target="_blank"><i class="ri-instagram-line"></i></a>
+                            </li>
+                            <li class="contato__rede">
+                                <a href="https://github.com/gc-barros" title="GitHub" target="_blank" rel="noreferrer"><i class="ri-github-fill"></i></a>
+                            </li>
+                            <li class="contato__rede">
+                                <a href="mailto:gc.barros81@gmail.com?subject=BarrosDEV, precisamos conversar!" title="E-mail" target="_blank" rel="noreferrer"><i class="ri-mail-line"></i></a>
+                            </li>
+                        </ul>
+                        <img class="contato__avatar" src="assets/img/avatares/bebida.png" alt="BarrosDEV pronto para uma conversa">
+                    </div>
+                </div>
+             </section>
          </main>
+         <footer class="rodape">&copy; 2021 Barrosdev. All rights reserved. Powered by: Gabriel C. Barros.</footer>
      </div>
 
      <script type="module" src="assets/js/main.js"></script>

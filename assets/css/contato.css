@@ -1,0 +1,198 @@
+.contato {
+    margin-top: 104px;
+    padding: 0 4px;
+}
+
+.contato__container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1070px;
+    margin: auto;
+    border-radius: 24px;
+    padding: 56px 40px;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 360px;
+}
+
+.contato__formulario .titulo-secao::before {
+    background-image: url(../../assets/img/icons/contato.svg);
+    background-size: contain;
+    bottom: -3px;
+}
+
+.contato__formulario--label {
+    position: absolute;
+    padding-left: 32px;
+    top: 10px;
+    pointer-events: none;
+    transition: .2s ease all;
+}
+
+.input-wrp {
+    width: 100%;
+    position: relative;
+}
+
+.contato__formulario--label::before {
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(../../assets/img/icons/nome.svg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: -9px;
+    transition: .1s ease all;
+}
+
+.input-wrp .contato__formulario--campo:focus ~ .contato__formulario--label,
+.input-wrp .contato__formulario--campo:valid ~ .contato__formulario--label {
+    top: -14px;
+    left: -8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.input-wrp .contato__formulario--campo:focus ~ .contato__formulario--label::before,
+.input-wrp .contato__formulario--campo:valid ~ .contato__formulario--label::before {
+    height: 18px;
+    width: 18px;
+    top: -7px;
+    left: 8px;
+}
+
+
+.input-wrp:nth-of-type(2) .contato__formulario--label::before {
+    background-image: url(../../assets/img/icons/email.svg);
+}
+
+.input-wrp:nth-of-type(3) .contato__formulario--label::before {
+    background-image: url(../../assets/img/icons/assunto.svg);
+}
+
+.input-wrp:nth-of-type(4) .contato__formulario--label::before {
+    background-image: url(../../assets/img/icons/mensagem.svg);
+}
+
+.contato__formulario--campo {
+    display: block;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #FFF;
+    border-image-source: linear-gradient(-15deg, #4070F4 0%, #2BD67B 100%);
+    border-image-slice: 1;
+    outline: none;
+    height: 36px;
+    margin-bottom: 48px;
+    width: 100%;
+    color: var(--branco);
+    caret-color: #3FFFBD;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: 300;
+    line-height: 160%;
+    transition: 1s ease all;
+}
+
+.contato__formulario--campo:invalid {
+    border-image-source: var(--gradient);
+}
+
+textarea.contato__formulario--campo {
+    height: 90px;
+    padding-top: 10px;
+}
+
+.contato__formulario .botao-primario {
+    width: 100%;
+}
+
+.contato__texto {
+    max-width: 504px;
+    line-height: 160%;
+}
+
+.contato__texto .subtitulo-secao::before {
+    background-image: url(../../assets/img/icons/papo.svg);
+    height: 28px;
+    width: 28px;
+    bottom: -6px;
+}
+
+.contato__redes {
+    display: flex;
+    margin-top: 32px;
+}
+
+.contato__rede {
+    margin-right: 24px;
+}
+
+.contato__rede a {
+    display: block;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.contato a:hover {
+    transform: scale(1.2);
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato__avatar {
+    display: block;
+    margin: auto;
+    margin-top: 72px;
+}
+
+.rodape {
+    padding: 104px 24px 40px 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 1023px) {
+    .contato__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato__formulario {
+        margin-bottom: 88px;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .contato__formulario--label,
+    .contato__formulario--campo {
+        font-size: 14px;
+    }
+
+    .contato__corpo {
+        font-size: 14px;
+    } 
+
+    .contato__avatar {
+        width: 140px;
+    }
+
+    .rodape {
+        font-size: 14px;
+    }
+}

@@ -6,14 +6,14 @@
     align-items: center;
     justify-content: space-around;
     padding: 40px;
-    max-width: 1256px;
-    margin: auto;
     box-sizing: border-box;
+    border-radius: 0;
 }
 
 .citacao__frase {
     max-width: 431px;
     line-height: 160%;
+    font-family: 'Space Mono', monospace;
 }
 
 @media screen and (max-width: 1024px) {
@@ -21,6 +21,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: 14px;
     }
 
     .citacao__logo {

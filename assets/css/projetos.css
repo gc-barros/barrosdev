@@ -9,7 +9,7 @@
 .projetos__projeto {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -36,6 +36,7 @@
     font-weight: 600;
     transition: .5s ease all;
     line-height: 160%;
+    font-family: 'Space Mono', monospace;
 }
 
 .projetos__link:hover {
@@ -176,7 +177,7 @@
 
 @media screen and (max-width: 1214px) {
     .projetos__projeto {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
@@ -187,7 +188,8 @@
     .projetos__carrossel {
         margin: 0;
         padding: 0;
-        margin-top: 56px;
+        margin-bottom: 56px;
+        margin-top: 24px;
     }
 
     .projetos__carrossel--botao-right {
@@ -234,9 +236,10 @@
         font-size: 18px;
         top: unset;
         bottom: 160px;
-        background-color: rgba(0, 0, 0, 0.32);
+        background-color: rgba(255, 255, 255, 0.32);
         z-index: 3;
-        color: var(--branco);
+        color: rgb(31, 28, 28);
+        font-weight: 600;
     }
 
     .projetos__carrossel--botao-left {

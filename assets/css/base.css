@@ -44,6 +44,31 @@ body {
     overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+  border-radius: 8px;
+  transition: .6s ease all;
+}
+
+::-moz-selection {
+    background-color: #2BD67B;
+}
+
+::selection {
+    background-color: #2BD67B;
+}
+
 @media screen and (max-width: 1023px) {
     .container-principal {
         background-position: -240px top, right 800px, left 2800px;

@@ -63,6 +63,7 @@
     display: flex;
     align-items: flex-end;
     filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 1px);
+    font-family: 'Space Mono', monospace;
 }
 
 .cabecalho__link--projetos {
@@ -72,16 +73,12 @@
 .cabecalho__link::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
     margin-right: 8px;
     background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
     transition: .5s ease all; 
     position: relative;
-}
-
-.cabecalho__link--sobre::before {
-    top: -2px;
 }
 
 .cabecalho__link--habilidades::before {
@@ -95,7 +92,6 @@
     background-image: url(../../assets/img/icons/projetos.svg);
     width: 20px;
     height: 20px;
-    top: -2px;
 }
 
 .cabecalho__link--contato {
