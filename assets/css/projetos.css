@@ -35,6 +35,7 @@
 .projetos__link {
     font-weight: 600;
     transition: .5s ease all;
+    line-height: 160%;
 }
 
 .projetos__link:hover {
