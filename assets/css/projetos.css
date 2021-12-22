@@ -42,6 +42,54 @@
     filter: brightness(1.6);
 }
 
+.subtitulo-techs::before {
+    display: none;
+}
+
+.projetos__techs {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.projetos__techs--item {
+    width: 25px;
+    height: 28px;
+    background-image: url(../img/icons/techs/gradient/html.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: .6s ease all;
+}
+
+.projetos__techs--item:hover {
+    filter: brightness(1.6);
+}
+
+.projetos__techs--item:nth-of-type(2) {
+    background-image: url(../img/icons/techs/gradient/css.svg);
+}
+
+.projetos__techs--item:nth-of-type(3) {
+    background-image: url(../img/icons/techs/gradient/javascript.svg);
+}
+
+
+.projetos__techs--item:nth-of-type(4) {
+    background-image: url(../img/icons/techs/gradient/figma.svg);
+}
+
+.projetos__techs--item:nth-of-type(5) {
+    background-image: url(../img/icons/techs/gradient/trello.svg);
+}
+
+.projetos__techs--item:nth-of-type(6) {
+    background-image: url(../img/icons/techs/gradient/github.svg);
+}
+
+
+
 .projetos__projeto {
     border-radius: 24px;
     border-color: var(--branco);
@@ -118,7 +166,7 @@
     background-color: var(--branco);
     border-radius: 24px;
     margin: 0 12px;
-    opacity: 0.4;
+    opacity: 0.24;
     cursor: pointer;
 }
 
@@ -181,19 +229,22 @@
     }
 
     .projetos__carrossel--botao {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
         top: unset;
-        bottom: -8px;
+        bottom: 160px;
+        background-color: rgba(0, 0, 0, 0.32);
+        z-index: 3;
+        color: var(--branco);
     }
 
     .projetos__carrossel--botao-left {
-        left: 0;
+        left: 16px;
     }
 
     .projetos__carrossel--botao-right {
-        right: 0;
+        right: 16px;
     }
 }
 
@@ -205,5 +256,25 @@
         width: 270px;
         height: auto;
         background-color: var(--branco);
+    }
+
+    .projetos__carrossel--botao {
+        bottom: 104px;
+    }
+
+    .projetos__carrossel--botao-right {
+        right: 10px;
+    }
+
+    .projetos__carrossel--botao-left {
+        left: 10px;
+    }
+
+    .projetos__link {
+        display: inline-block;
+        max-width: 280px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 }
