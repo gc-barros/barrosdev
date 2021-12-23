@@ -16,12 +16,13 @@
     border: 2px solid var(--branco);
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
+    color: var(--branco);
     transition: .4s ease all;
 }
 
 .botao-topo:hover {
+    color: #000;
     bottom: 84px;
-    color: var(--branco);
 }
 
 @media screen and (max-width: 1023px) {

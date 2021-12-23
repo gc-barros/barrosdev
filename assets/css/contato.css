@@ -1,7 +1,20 @@
 .contato {
-    margin-top: 88px;
-    padding: 0 4px;
+    padding: 88px 4px;
+    background-image: 
+        url(../../assets/img/apetrechos/luz3.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
 }
+
+.contato::after {
+    content: url(../../assets/img/apetrechos/circulo200.svg);
+    position: absolute;
+    right: 88px;
+    bottom: 160px;
+    z-index: -1;
+}
+
 
 .contato__container {
     display: flex;
@@ -158,7 +171,8 @@ textarea.contato__formulario--campo {
 }
 
 .rodape {
-    padding: 104px 24px 24px 24px;
+    padding: 16px 24px;
+    background: var(--gradient);
     text-align: center;
     display: flex;
     justify-content: center;

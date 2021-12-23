@@ -1,6 +1,19 @@
 .projetos {
     padding: 88px 24px;
     padding-bottom: 56px;
+    background-image: 
+        url(../../assets/img/apetrechos/luz2.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+}
+
+.projetos::after {
+    content: url(../../assets/img/apetrechos/circulo200.svg);
+    position: absolute;
+    right: 200px;
+    bottom: 32px;
+    z-index: -1;
 }
 
 .projetos > .titulo-secao {
@@ -89,8 +102,6 @@
 .projetos__techs--item:nth-of-type(6) {
     background-image: url(../img/icons/techs/gradient/github.svg);
 }
-
-
 
 .projetos__projeto {
     border-radius: 24px;
@@ -196,9 +207,15 @@
     .projetos__carrossel--botao-right {
         right: -32px;
     }
+
+    
 }
 
 @media screen and (max-width: 767px) {
+    .projetos::after {
+        display: none;
+    }
+
     .projetos {
         padding: 88px 4px;
         padding-bottom: 56px;
