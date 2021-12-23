@@ -57,20 +57,20 @@
                  <nav class="cabecalho__navegacao">
                     <ul class="cabecalho__menu" data-menu>
                         <li class="cabecalho__item">
-                             <a href="" class="cabecalho__link cabecalho__link--sobre">Sobre</a>
+                             <a href="#sobre" class="cabecalho__link cabecalho__link--sobre">Sobre</a>
                         </li>
                         <li class="cabecalho__item">
-                             <a href="" class="cabecalho__link cabecalho__link--habilidades">Habilidades</a>
+                             <a href="#habilidades" class="cabecalho__link cabecalho__link--habilidades">Habilidades</a>
                         </li>
                         <li class="cabecalho__item">
-                             <a href="" class="cabecalho__link cabecalho__link--projetos">Projetos</a>
+                             <a href="#projetos" class="cabecalho__link cabecalho__link--projetos">Projetos</a>
                         </li>
                         <li class="cabecalho__item">
-                            <a href="" class="cabecalho__link cabecalho__link--contato">Contato</a>
+                            <a href="#contato" class="cabecalho__link cabecalho__link--contato">Contato</a>
                         </li>
                     </ul>
                  </nav>
-                <button class="botao botao-secundario botao-contato">
+                <button class="botao botao-secundario botao-contato" data-botao="contato">
                     <span class="texto-gradient texto-contato">Contato</span>
                 </button>
              </div>
@@ -78,21 +78,21 @@
          
          <main class="conteudo">
 
-             <section class="introducao">
+             <section class="introducao" id="introducao">
                 <div class="introducao__decoracao"></div>
                 <div class="introducao__texto vidro">
                     <h2 class="introducao__titulo">Até onde o <span class="texto-gradient">poder</span> dos códigos pode nos levar?</h2>
                     <p class="introducao__corpo">A nossa sociedade tem se tornado cada vez mais digital. Não fique para trás, posso ajudar você nessa jornada!</p>
                     <div class="caixa-botao">
-                        <button class="botao botao-primario">Quem sou eu?</button>
-                        <button class="botao botao-secundario"><span class="texto-gradient">Entrar em contato</span></button>
+                        <button class="botao botao-primario" data-botao="sobre">Quem sou eu?</button>
+                        <button class="botao botao-secundario" data-botao="contato"><span class="texto-gradient">Entrar em contato</span></button>
                     </div>
                 </div>
              </section>
 
              <button class="botao-topo" aria-label="Botão voltar ao topo" title="Voltar ao topo da página" data-scrollToTop><i class="ri-arrow-up-s-line"></i></button>
 
-             <section class="sobre">
+             <section class="sobre" id="sobre">
                  <div class="sobre__container vidro">
                      <h2 class="titulo-secao">Sobre mim</h2>
 
@@ -192,15 +192,15 @@
                          <img src="assets/img/avatares/logotipo.svg" alt="Logotipo BarrosDEV" class="sobre__chamada--imagem">
                          <p class="sobre__chamada--texto">Nos últimos meses, tenho estudado bastante e desenvolvi alguns trabalhos bem legais. Que tal conhecer alguns deles?</p>
                         <div class="caixa-botao">
-                            <button class="botao botao-primario">Ver projetos</button>
-                            <button class="botao botao-secundario"><span class="texto-gradient">Fale comigo</span></button>
+                            <button class="botao botao-primario" data-botao="projetos">Ver projetos</button>
+                            <button class="botao botao-secundario" data-botao="contato"><span class="texto-gradient">Fale comigo</span></button>
                         </div>
                      </div>
 
                  </div>
              </section>
 
-             <section class="habilidades">
+             <section class="habilidades" id="habilidades">
                 <div class="habilidades__intro">
                     <div class="habilidades__texto">
                         <h2 class="titulo-secao">Habilidades</h2>
@@ -212,22 +212,22 @@
                     <div class="habilidades__card vidro">
                         <h3 class="habilidades__card--titulo">Design e prototipação de websites</h3>
                         <p class="habilidades__card--descricao">Construção de protótipos no Figma, com layouts que melhor se adequem às suas necessidades e à identidade visual da sua marca.</p>
-                        <button class="botao botao-secundario habilidades__card--botao">Entrar em contato</button>
+                        <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
                     </div>
                     <div class="habilidades__card habilidades__card--principal vidro">
                         <h3 class="habilidades__card--titulo">Desenvolvimento Web: Front-end</h3>
                         <p class="habilidades__card--descricao">Codificação do seu website, utilizando HTML5, CSS3 e JavaScript, além das melhores práticas de SEO e acessibilidade, colocando o projeto final no ar.</p>
-                        <button class="botao botao-secundario habilidades__card--botao">Entrar em contato</button>
+                        <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
                     </div>
                     <div class="habilidades__card vidro">
                         <h3 class="habilidades__card--titulo">Criação de identidades visuais e artes</h3>
                         <p class="habilidades__card--descricao">Design de logos, banners, panfletos, cartões de visita, artes para produtos personalizados, edições de imagem, dentre outros.</p>
-                        <button class="botao botao-secundario habilidades__card--botao">Entrar em contato</button>
+                        <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
                     </div>
                 </div>
              </section>
 
-             <section class="projetos">
+             <section class="projetos" id="projetos">
                 <h2 class="titulo-secao">Projetos</h2>
                 <p class="projetos__texto">Estes são alguns dos últimos projetos, individuais e em equipes, que participei como <strong class="texto-gradient">designer e desenvolvedor front-end</strong>:</p>
                 <div class="projetos__projeto vidro">
@@ -288,7 +288,7 @@
                  <q class="citacao__frase">Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer. <br><strong>- Alan Turing</strong></q>
              </aside>
 
-             <section class="contato">
+             <section class="contato" id="contato">
                 <div class="contato__container vidro">
                     <form action="https://formsubmit.co/33c2e220200913dc0ef7ee8106b6773e" method="POST" class="contato__formulario">
                         <h2 class="titulo-secao">Contato</h2>

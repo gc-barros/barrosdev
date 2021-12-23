@@ -1,5 +1,5 @@
 .contato {
-    padding: 88px 4px;
+    padding: 104px 4px;
     background-image: 
         url(../../assets/img/apetrechos/luz3.png);
     background-repeat: no-repeat;
@@ -15,6 +15,12 @@
     z-index: -1;
 }
 
+.contato::before {
+    content: url(../../assets/img/apetrechos/pontilhado1.svg);
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 610px);
+}
 
 .contato__container {
     display: flex;
@@ -187,6 +193,10 @@ textarea.contato__formulario--campo {
         justify-content: center;
     }
 
+    .contato::before {
+        display: none;
+    }
+    
     .contato__formulario {
         margin-bottom: 88px;
         width: 100%;

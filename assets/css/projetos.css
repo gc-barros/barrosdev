@@ -1,11 +1,12 @@
 .projetos {
-    padding: 88px 24px;
+    padding: 104px 24px;
     padding-bottom: 56px;
     background-image: 
         url(../../assets/img/apetrechos/luz2.png);
     background-repeat: no-repeat;
     background-position: right center;
     position: relative;
+    box-sizing: border-box;
 }
 
 .projetos::after {
@@ -14,6 +15,13 @@
     right: 200px;
     bottom: 32px;
     z-index: -1;
+}
+
+.projetos::before {
+    content: url(../../assets/img/apetrechos/tracejado1.svg);
+    position: absolute;
+    top: 160px;
+    left: calc(50% - 560px);
 }
 
 .projetos > .titulo-secao {
@@ -212,7 +220,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    .projetos::after {
+    .projetos::after,
+    .projetos::before {
         display: none;
     }
 
