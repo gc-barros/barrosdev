@@ -12,5 +12,5 @@ ___
 
 - 💚 O principal objetivo deste projeto é servir como cartão de visitas e portfólio, contando um pouco sobre a minha história, estudos, habilidades e projetos desenvolvidos, além de fornecer meios para que pessoas interessadas no meu trabalho possam entrar em contato comigo. 
 
-- 👊 Sinta-se livre para usar este projeto como fonte de inspiração, mas lembre-se que ser autêntico sempre é a melhor opção. ;)
+- 👊 Sinta-se livre para usar este projeto como fonte de inspiração, mas lembre-se que ser autêntico sempre é a melhor alternativa. ;)
 
