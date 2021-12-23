@@ -1,0 +1,43 @@
+.digitando {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid #40FFC1; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin-left: auto;
+    margin-right: auto;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    max-width: 300px;
+}
+
+.digitando-nocenter {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #40FFC1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .digitando {
+        max-width: 270px;
+        animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+}

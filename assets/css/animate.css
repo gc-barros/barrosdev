@@ -20,3 +20,8 @@
     transition: .3s linear all;
     transform: translate3d(0, 40px, 0);
 }
+
+[data-anima="typing"] {
+    opacity: 0;
+    transition: .3s linear all;
+}
