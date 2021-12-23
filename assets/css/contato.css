@@ -20,6 +20,13 @@
     position: absolute;
     top: 24px;
     left: calc(50% - 610px);
+    display: none;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .contato::before {
+        display: block;
+    }
 }
 
 .contato__container {
