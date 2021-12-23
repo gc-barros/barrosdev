@@ -1,5 +1,6 @@
 .projetos {
     padding: 88px 24px;
+    padding-bottom: 56px;
 }
 
 .projetos > .titulo-secao {
@@ -200,6 +201,7 @@
 @media screen and (max-width: 767px) {
     .projetos {
         padding: 88px 4px;
+        padding-bottom: 56px;
     }
 
     .projetos__texto {
@@ -236,9 +238,9 @@
         font-size: 18px;
         top: unset;
         bottom: 160px;
-        background-color: rgba(255, 255, 255, 0.32);
+        background-color: rgba(30, 31, 32, 0.32);
         z-index: 3;
-        color: rgb(31, 28, 28);
+        color: rgb(255, 255, 255);
         font-weight: 600;
     }
 

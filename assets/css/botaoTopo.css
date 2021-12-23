@@ -1,0 +1,47 @@
+.botao-topo {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    border-radius: 40px;
+    right: 80px;
+    bottom: 80px;
+    height: 40px;
+    width: 40px;
+    background: var(--gradient);
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border: 2px solid var(--branco);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px;
+    transition: .4s ease all;
+}
+
+.botao-topo:hover {
+    bottom: 84px;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 1023px) {
+    .botao-topo {
+        right: 64px;
+        bottom: 64px;
+    }
+
+    .botao-topo:hover {
+        bottom: 64px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .botao-topo {
+        right: 40px;
+        bottom: 56px;
+    }
+
+    .botao-topo:hover {
+        bottom: 60px;
+    }
+}
