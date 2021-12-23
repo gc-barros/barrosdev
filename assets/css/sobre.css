@@ -72,6 +72,17 @@
 
 .sobre__apresentacao--avatar {
     margin-left: 56px;
+    animation: inflar 3s ease infinite;
+}
+
+@keyframes inflar {
+    from,
+    to {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 .sobre__ficha {

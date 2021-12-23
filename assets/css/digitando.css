@@ -5,7 +5,8 @@
     margin-left: auto;
     margin-right: auto;
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-    max-width: 300px;
+    letter-spacing: 0.16rem;
+    max-width: 320px;
 }
 
 .digitando-nocenter {
@@ -37,7 +38,7 @@
 
 @media screen and (max-width: 767px) {
     .digitando {
-        max-width: 270px;
-        animation: typing 1.2s steps(40, end), blink-caret 0.75s step-end infinite;
+        max-width: 300px;
+        animation: typing 2s steps(12, end), blink-caret 0.75s step-end infinite;
     }
 }
