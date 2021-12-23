@@ -39,6 +39,6 @@
 @media screen and (max-width: 767px) {
     .digitando {
         max-width: 300px;
-        animation: typing 2s steps(12, end), blink-caret 0.75s step-end infinite;
+        animation: typing 1.4s steps(12, end), blink-caret 0.75s step-end infinite;
     }
 }

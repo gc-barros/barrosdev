@@ -72,7 +72,7 @@
 
 .sobre__apresentacao--avatar {
     margin-left: 56px;
-    animation: inflar 3s ease infinite;
+    animation: inflar 2s ease infinite;
 }
 
 @keyframes inflar {
