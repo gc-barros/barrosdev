@@ -45,6 +45,7 @@
      <link rel="stylesheet" href="assets/css/citacao.css">
      <link rel="stylesheet" href="assets/css/contato.css">
      <link rel="stylesheet" href="assets/css/botaoTopo.css">
+     <link rel="stylesheet" href="assets/css/animate.css">
  </head>
  <body>
      <div class="container-principal">
@@ -80,7 +81,7 @@
 
              <section class="introducao" id="introducao">
                 <div class="introducao__decoracao"></div>
-                <div class="introducao__texto vidro">
+                <div class="introducao__texto vidro" data-anima="left">
                     <h2 class="introducao__titulo">Até onde o <span class="texto-gradient">poder</span> dos códigos pode nos levar?</h2>
                     <p class="introducao__corpo">A nossa sociedade tem se tornado cada vez mais digital. Não fique para trás, posso ajudar você nessa jornada!</p>
                     <div class="caixa-botao">
@@ -96,7 +97,7 @@
                  <div class="sobre__container vidro">
                      <h2 class="titulo-secao">Sobre mim</h2>
 
-                     <div class="sobre__apresentacao">
+                     <div class="sobre__apresentacao" data-anima="right">
                          <div class="sobre__hello">
                              <p class="sobre__hello--code">Hello, world! I'm</p>
                              <img src="assets/img/logobarrosdev.svg" alt="Logo BarrosDEV" class="sobre__hello--logo">
@@ -104,7 +105,7 @@
                          <img src="assets/img/avatares/sorridente.png" alt="BarrosDEV sorridente" class="sobre__apresentacao--avatar">
                      </div>
 
-                     <div class="sobre__ficha">
+                     <div class="sobre__ficha" data-anima="left">
                          <img src="assets/img/avatares/meditando.png" alt="BarrosDEV meditando" class="sobre__ficha--avatar">
                          <div class="sobre__ficha--conteudo">
                              <h3 class="subtitulo-secao">Ficha técnica</h3>
@@ -118,14 +119,14 @@
                          </div>
                      </div>
 
-                     <div class="sobre__quote">
+                     <div class="sobre__quote" data-anima="right">
                          <q class="sobre__quote--texto">
                             Venho buscando me qualificar ao máximo, <strong class="texto-gradient">sempre à procura de cursos, desafios e experiências</strong> que acrescentem à minha formação, tanto no lado pessoal como no profissional, para assim conseguir mudar o mundo através do poder dos códigos!
                          </q>
                          <img src="assets/img/avatares/lendo.png" alt="BarrosDEV lendo um livro" class="sobre__quote--avatar">
                      </div>
 
-                     <div class="sobre__cinto">
+                     <div class="sobre__cinto" data-anima="left">
                          <div class="sobre__cinto--container">
                              <img src="assets/img/avatares/laptop.png" alt="Laptop com o logotipo BarrosDEV" class="sobre__cinto--imagem">
                             <div class="sobre__cinto--conteudo">
@@ -188,7 +189,7 @@
                          </div>
                      </div>
 
-                     <div class="sobre__chamada">
+                     <div class="sobre__chamada" data-anima="bottom">
                          <img src="assets/img/avatares/logotipo.svg" alt="Logotipo BarrosDEV" class="sobre__chamada--imagem">
                          <p class="sobre__chamada--texto">Nos últimos meses, tenho estudado bastante e desenvolvi alguns trabalhos bem legais. Que tal conhecer alguns deles?</p>
                         <div class="caixa-botao">
@@ -202,24 +203,24 @@
 
              <section class="habilidades" id="habilidades">
                 <div class="habilidades__intro">
-                    <div class="habilidades__texto">
+                    <div class="habilidades__texto" data-anima="left">
                         <h2 class="titulo-secao">Habilidades</h2>
                         <p class="habilidades__corpo">Posso agregar valor ao seu negócio de diversas formas, aqui estão algumas das minhas principais <strong>habilidades técnicas e atividades que gosto de desempenhar</strong>:</p>
                     </div>
-                    <img src="assets/img/avatares/callme.png" alt="BarrosDEV fazendo um hang loose com a mão" class="habilidades__avatar">
+                    <img src="assets/img/avatares/callme.png" alt="BarrosDEV fazendo um hang loose com a mão" class="habilidades__avatar" data-anima="right">
                 </div>
                 <div class="habilidades__cards">
-                    <div class="habilidades__card vidro">
+                    <div class="habilidades__card vidro" data-anima="bottom">
                         <h3 class="habilidades__card--titulo">Design e prototipação de websites</h3>
                         <p class="habilidades__card--descricao">Construção de protótipos no Figma, com layouts que melhor se adequem às suas necessidades e à identidade visual da sua marca.</p>
                         <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
                     </div>
-                    <div class="habilidades__card habilidades__card--principal vidro">
+                    <div class="habilidades__card habilidades__card--principal vidro" data-anima="bottom">
                         <h3 class="habilidades__card--titulo">Desenvolvimento Web: Front-end</h3>
                         <p class="habilidades__card--descricao">Codificação do seu website, utilizando HTML5, CSS3 e JavaScript, além das melhores práticas de SEO e acessibilidade, colocando o projeto final no ar.</p>
                         <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
                     </div>
-                    <div class="habilidades__card vidro">
+                    <div class="habilidades__card vidro" data-anima="bottom">
                         <h3 class="habilidades__card--titulo">Criação de identidades visuais e artes</h3>
                         <p class="habilidades__card--descricao">Design de logos, banners, panfletos, cartões de visita, artes para produtos personalizados, edições de imagem, dentre outros.</p>
                         <button class="botao botao-secundario habilidades__card--botao" data-botao="contato">Entrar em contato</button>
@@ -228,10 +229,12 @@
              </section>
 
              <section class="projetos" id="projetos">
-                <h2 class="titulo-secao">Projetos</h2>
-                <p class="projetos__texto">Estes são alguns dos últimos projetos, individuais e em equipes, que participei como <strong class="texto-gradient">designer e desenvolvedor front-end</strong>:</p>
+                <div data-anima="bottom">
+                    <h2 class="titulo-secao">Projetos</h2>
+                    <p class="projetos__texto">Estes são alguns dos últimos projetos, individuais e em equipes, que participei como <strong class="texto-gradient">designer e desenvolvedor front-end</strong>:</p>
+                </div>
                 <div class="projetos__projeto vidro">
-                    <div class="projetos__descricao">
+                    <div class="projetos__descricao" data-anima="left">
                         <h3 class="subtitulo-secao" data-projeto="titulo">Título do projeto</h3>
                         <a href="" target="_blank" class="texto-gradient projetos__link" data-projeto="link">https://linkdoprojeto.vercel.app/</a>
                         <p class="projetos__projeto--detalhes" data-projeto="detalhes">
@@ -252,7 +255,7 @@
                         </div>
                     </div>
 
-                    <div class="projetos__carrossel">
+                    <div class="projetos__carrossel" data-anima="right">
 
                         <button class="projetos__carrossel--botao projetos__carrossel--botao-left" aria-label="Botão ir para o anterior" title="Ir para o projeto anterior" data-botao-anterior><i class="ri-arrow-left-line"></i></button>
 
@@ -284,13 +287,13 @@
              </section>
 
              <aside class="citacao">
-                 <img src="assets/img/barrosdevlogo-white.svg" alt="Logo BarrosDEV" class="citacao__logo">
-                 <q class="citacao__frase">Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer. <br><strong>- Alan Turing</strong></q>
+                 <img src="assets/img/barrosdevlogo-white.svg" alt="Logo BarrosDEV" class="citacao__logo" data-anima="left">
+                 <q class="citacao__frase" data-anima="right">Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer. <br><strong>- Alan Turing</strong></q>
              </aside>
 
              <section class="contato" id="contato">
                 <div class="contato__container vidro">
-                    <form action="https://formsubmit.co/33c2e220200913dc0ef7ee8106b6773e" method="POST" class="contato__formulario">
+                    <form action="https://formsubmit.co/33c2e220200913dc0ef7ee8106b6773e" method="POST" class="contato__formulario" data-anima="left">
                         <h2 class="titulo-secao">Contato</h2>
 
                         <input type="hidden" name="_autoresponse" value="BarrosDEV | Olá, fiquei muito feliz ao receber a sua mensagem! Obrigado por reconhecer o meu trabalho, em breve estarei entrando em contato com você, abraços. ;)">
@@ -315,7 +318,7 @@
                         <button type="submit" class="botao botao-primario">Enviar</button>
                     </form>
 
-                    <div class="contato__texto">
+                    <div class="contato__texto" data-anima="right">
                         <h3 class="subtitulo-secao">Vamos bater um papo?</h3>
                         <p class="contato__corpo">Estou sempre aberto ao diálogo, troca de ideias e novas conexões! Posso te ajudar de alguma forma? Sinta-se à vontade para entrar em contato comigo por meio do formulário ou através das minhas redes sociais:</p>
                         <ul class="contato__redes">
