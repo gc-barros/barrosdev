@@ -50,6 +50,8 @@ function carrosselInit() {
     };
 
     let carrossel = new Carousel(botaoAnterior, botaoProximo, listaProjetos, navegacao, titulo, link, detalhes, dados, botaoVisitar, botaoRepositorio);
+
+    carrossel.preparaSlides();
 }
 
 export default carrosselInit;
@@ -95,6 +97,7 @@ class Carousel {
         );
 
         this.preparaSlides();
+        this.renderizarDescricao();
     }
 
     getListaSlides() {
@@ -168,8 +171,6 @@ class Carousel {
         this.slides.forEach((slide, i) => {
             slide.style.left = this.tamanhoSlide * i + "px";
         });
-
-        this.renderizarDescricao();
     }
 
     renderizarDescricao() {
