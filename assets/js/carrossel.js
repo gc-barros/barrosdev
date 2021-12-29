@@ -109,7 +109,7 @@ class Carousel {
     }
 
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width;
+        return this.slides[0].offsetWidth;
     }
 
     getSlideAtual() {
