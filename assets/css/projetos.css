@@ -187,12 +187,14 @@
     background-color: var(--branco);
     border-radius: 24px;
     margin: 0 12px;
-    opacity: 0.24;
+    opacity: 0.30;
     cursor: pointer;
+    transition: .4s ease all;
 }
 
 .carousel__indicador--ativo {
     opacity: 1;
+    width: 30px;
 }
 
 @media screen and (max-width: 1214px) {

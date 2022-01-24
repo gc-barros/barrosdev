@@ -10,43 +10,50 @@ function carrosselInit() {
     const botaoRepositorio = "[data-botao='repositorio']"
 
     const dados = {
-        projetos: [
-            {
-                titulo: "Blue Wand",
-                link: "https://bluewand.vercel.app/",
-                repositorio: "https://github.com/gc-barros/blue-wand",
-                detalhes:
-                    "Landing page da Blue Wand, um grupo 100% maranhense de apoio a homens acometidos por câncer de pênis. Projeto desenvolvido em grupo, durante o primeiro desafio integrado do Programa Trilhas (Inova Maranhão).",
-            },
-            {
-                titulo: "Por Elas",
-                link: "https://porelas.ong.br/",
-                repositorio: "https://github.com/gc-barros/por-elas",
-                detalhes:
-                    "Website do Por Elas, um projeto fantástico que mobiliza pessoas e realiza ações para mulheres em São Luís – MA. Landing page construída por um grupo de programadores do Programa Trilhas (Inova Maranhão).",
-            },
-            {
-                titulo: "Éguas, Siow!",
-                link: "https://eguassiow.netlify.app/",
-                repositorio: "https://github.com/gc-barros/2-workshop-trilhas",
-                detalhes:
-                    "Website desenvolvido de forma individual, durante o 1º Workshop Trilhas, com o objetivo de promover a cultura do Estado do Maranhão, exaltando as suas belezas, encantos e diversidade, através de um site atrativo.",
-            },
-            {
-                titulo: "Pet Planet",
-                link: "https://petplanet.netlify.app/",
-                repositorio: "https://github.com/gc-barros/pet-planet",
-                detalhes:
-                    'Projeto de uma clínica petshop fictícia, com telas de início, quem somos, serviços, fale conosco, login e cadastro. Desenvolvido em grupo, durante a disciplina de "Projeto e Desenvolvimento de Software" (front-end).',
-            },
-            {
-                titulo: "Pet Planet | Usuário",
-                link: "https://petplanet.netlify.app/07-user-page.html/",
-                repositorio: "https://github.com/gc-barros/pet-planet",
-                detalhes:
-                    "Páginas internas da clínica Pet Planet, para as quais os usuários seriam direcionados após o login e cadastro, com acesso a telas navegáveis de início, produtos, serviços e agenda (back-end não integrado).",
-            },
-        ],
+      projetos: [
+        {
+          titulo: "Blue Wand",
+          link: "https://bluewand.vercel.app/",
+          repositorio: "https://github.com/gc-barros/blue-wand",
+          detalhes:
+            "Landing page da Blue Wand, um grupo 100% maranhense de apoio a homens acometidos por câncer de pênis. Projeto desenvolvido em grupo, durante o primeiro desafio integrado do Programa Trilhas (Inova Maranhão).",
+        },
+        {
+          titulo: "Mais Inova",
+          link: "https://maisinova.vercel.app/",
+          repositorio: "https://github.com/gc-barros/mais-inova",
+          detalhes:
+            "Projeto desenvolvido em equipe, durante o 2° desafio integrado do Programa Trilhas, cujo tema era Mercado Financeiro. O site aborda a temática ESG e possui um quiz interativo que identifica o tipo de perfil do investidor.",
+        },
+        {
+          titulo: "Por Elas",
+          link: "https://porelas.ong.br/",
+          repositorio: "https://github.com/gc-barros/por-elas",
+          detalhes:
+            "Website do Por Elas, um projeto fantástico que mobiliza pessoas e realiza ações para mulheres em São Luís – MA. Landing page construída por um grupo de programadores do Programa Trilhas (Inova Maranhão).",
+        },
+        {
+          titulo: "Éguas, Siow!",
+          link: "https://eguassiow.netlify.app/",
+          repositorio: "https://github.com/gc-barros/2-workshop-trilhas",
+          detalhes:
+            "Website desenvolvido de forma individual, durante o 1º Workshop Trilhas, com o objetivo de promover a cultura do Estado do Maranhão, exaltando as suas belezas, encantos e diversidade, através de um site atrativo.",
+        },
+        {
+          titulo: "Pet Planet",
+          link: "https://petplanet.netlify.app/",
+          repositorio: "https://github.com/gc-barros/pet-planet",
+          detalhes:
+            'Projeto de uma clínica petshop fictícia, com telas de início, quem somos, serviços, fale conosco, login e cadastro. Desenvolvido em grupo, durante a disciplina de "Projeto e Desenvolvimento de Software" (front-end).',
+        },
+        {
+          titulo: "Pet Planet | Usuário",
+          link: "https://petplanet.netlify.app/07-user-page.html/",
+          repositorio: "https://github.com/gc-barros/pet-planet",
+          detalhes:
+            "Páginas internas da clínica Pet Planet, para as quais os usuários seriam direcionados após o login e cadastro, com acesso a telas navegáveis de início, produtos, serviços e agenda (back-end não integrado).",
+        },
+      ],
     };
 
     let carrossel = new Carousel(botaoAnterior, botaoProximo, listaProjetos, navegacao, titulo, link, detalhes, dados, botaoVisitar, botaoRepositorio);
