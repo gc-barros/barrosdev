@@ -175,9 +175,13 @@ class Carousel {
     }
 
     preparaSlides() {
-        this.slides.forEach((slide, i) => {
-            slide.style.left = this.tamanhoSlide * i + "px";
-        });
+        if (this.tamanhoSlide != 0) {
+            this.slides.forEach((slide, i) => {
+                slide.style.left = this.tamanhoSlide * i + "px";
+            });
+        } else {
+            this.preparaSlides();
+        }
     }
 
     renderizarDescricao() {
