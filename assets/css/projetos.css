@@ -71,19 +71,26 @@
 
 .projetos__techs {
     display: flex;
+    max-width: 410px;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
 .projetos__techs--item {
-    width: 25px;
+    width: 28px;
     height: 28px;
     background-image: url(../img/icons/techs/gradient/html.svg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     margin-right: 24px;
     margin-bottom: 16px;
     cursor: pointer;
     transition: .6s ease all;
+}
+
+.projetos__techs--item.projetos__techs--disabled {
+    display: none;
 }
 
 .projetos__techs--item:hover {
@@ -98,16 +105,23 @@
     background-image: url(../img/icons/techs/gradient/javascript.svg);
 }
 
-
 .projetos__techs--item:nth-of-type(4) {
-    background-image: url(../img/icons/techs/gradient/figma.svg);
+    background-image: url(../img/icons/techs/gradient/next.svg);
 }
 
 .projetos__techs--item:nth-of-type(5) {
-    background-image: url(../img/icons/techs/gradient/trello.svg);
+    background-image: url(../img/icons/techs/gradient/react.svg);
 }
 
 .projetos__techs--item:nth-of-type(6) {
+    background-image: url(../img/icons/techs/gradient/figma.svg);
+}
+
+.projetos__techs--item:nth-of-type(7) {
+    background-image: url(../img/icons/techs/gradient/trello.svg);
+}
+
+.projetos__techs--item:nth-of-type(8) {
     background-image: url(../img/icons/techs/gradient/github.svg);
 }
 
@@ -189,7 +203,6 @@
     margin: 0 12px;
     opacity: 0.30;
     cursor: pointer;
-    transition: .4s ease all;
 }
 
 .carousel__indicador--ativo {
@@ -301,6 +314,18 @@
 
     .projetos__carrossel--botao-left {
         left: 10px;
+    }
+
+    .projetos__carrossel--indicador {
+        margin: 0 8px;
+    }
+
+    .projetos__descricao .subtitulo-secao {
+        max-width: 280px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 1.3;
     }
 
     .projetos__link {

@@ -50,6 +50,15 @@
     bottom: -1px;
 }
 
+.github-link {
+    color: #FFF;
+    transition: .4s;
+}
+
+.github-link:hover {
+    color: #40FFC1;
+}
+
 /* Títulos */
 
 .titulo-secao {
@@ -73,14 +82,14 @@
     content: '';
     display: inline-block;
     position: relative;
-    background: url(../../assets/img/icons/sobremim.svg) no-repeat center / cover;
+    background: url(../../assets/img/icons/sobremim.svg) no-repeat center / contain;
     width: 48px;
     height: 42px;
     margin-right: 16px;
 }
 
 .subtitulo-secao::before {
-    background: url(../../assets/img/icons/ficha.svg) no-repeat center / cover;
+    background: url(../../assets/img/icons/ficha.svg) no-repeat center / contain;
     width: 40px;
     height: 40px;
     bottom: -4px;
