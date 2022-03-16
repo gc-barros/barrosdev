@@ -157,6 +157,10 @@
     overflow: hidden;
 }
 
+.projetos__carrossel--imagem-item {
+    display: block;
+}
+
 .projetos__carrossel--lista {
     display: flex;
     transition: .4s ease all;
