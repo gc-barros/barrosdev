@@ -75,6 +75,7 @@
     font-weight: 600;
     margin-bottom: 24px;
     font-family: 'Space Mono', monospace;
+    letter-spacing: .5px;
 }
 
 .titulo-secao::before,

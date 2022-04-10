@@ -13,7 +13,7 @@ function carrosselInit() {
   const dados = {
     projetos: [
       {
-        titulo: "Aluracord | Bulbasaur",
+        titulo: "Aluracord Bulbasaur",
         link: "https://aluracord-bulbasaur.vercel.app/",
         repositorio: "https://github.com/gc-barros/aluracord-bulbasaur",
         detalhes:
@@ -26,6 +26,30 @@ function carrosselInit() {
         repositorio: "https://github.com/gc-barros/encurtalinks",
         detalhes:
           "Aplicação para encurtamento de links, utilizando a Bitly API. Além de encurtar e copiar links, o usuário também pode gerenciá-los na página 'meus links', com dados armazenados no localStorage do navegador.",
+        techs: ["HTML5", "CSS3", "JavaScript", "React", "Figma"],
+      },
+      {
+        titulo: "WLS Tasklist",
+        link: "https://wls-tasklist.vercel.app/",
+        repositorio: "https://github.com/gc-barros/wls-tasklist",
+        detalhes:
+          "Resolução do desafio para estágio em desenvolvimento front-end da WLS Soluções. Aplicação de gerenciamento de lista de tarefas, com dados armazenados via API externa. É possível criar, buscar, editar e excluir tarefas.",
+        techs: ["HTML5", "Sass", "TypeScript", "Next", "React", "Figma"],
+      },
+      {
+        titulo: "Cineperfil",
+        link: "https://cineperfil.vercel.app/",
+        repositorio: "https://github.com/gc-barros/cineperfil",
+        detalhes:
+          "Front-end em React, desenvolvido para obtenção de nota na disciplina de Desenvolvimento de Sistemas Web (BICT/UFMA). Crie o seu perfil, gerencie seus filmes, séries e animes favoritos expressando sua opinião.",
+        techs: ["HTML5", "Sass", "TypeScript", "React", "Figma"],
+      },
+      {
+        titulo: "Ballerini Devs",
+        link: "https://ballerinidevs-gabito.netlify.app/",
+        repositorio: "https://github.com/gc-barros/ballerini-devs",
+        detalhes:
+          "Desafio da Tech da Semana: React, proposto pela Comunidade Ballerini. Trata-se de um sistema de cadastro e gerenciamento de devs, com dados armazenados no localStorage e conexão com GitHub API.",
         techs: ["HTML5", "CSS3", "JavaScript", "React", "Figma"],
       },
       {
@@ -68,6 +92,7 @@ function carrosselInit() {
           'Projeto de uma clínica petshop fictícia, com telas de início, quem somos, serviços, fale conosco, login e cadastro. Desenvolvido em grupo, durante a disciplina de "Projeto e Desenvolvimento de Software" (front-end).',
         techs: ["HTML5", "CSS3", "JavaScript", "Figma"],
       },
+      /*
       {
         titulo: "Pet Planet | Usuário",
         link: "https://petplanet.netlify.app/07-user-page.html/",
@@ -76,6 +101,7 @@ function carrosselInit() {
           "Páginas internas da clínica Pet Planet, para as quais os usuários seriam direcionados após o login e cadastro, com acesso a telas navegáveis de início, produtos, serviços e agenda (back-end não integrado).",
         techs: ["HTML5", "CSS3", "JavaScript", "Figma"],
       },
+      */
     ],
   };
 
@@ -150,7 +176,9 @@ class Carousel {
   }
 
   getTamanhoSlide() {
-    return this.slides[0].offsetWidth;
+    return this.slides[0].offsetWidth !== 0
+      ? this.slides[0].offsetWidth
+      : this.slides[0].getBoundingClientRect().width;
   }
 
   getSlideAtual() {
@@ -213,6 +241,7 @@ class Carousel {
         slide.style.left = this.tamanhoSlide * i + "px";
       });
     } else {
+      this.tamanhoSlide = this.getTamanhoSlide();
       this.preparaSlides();
     }
   }
