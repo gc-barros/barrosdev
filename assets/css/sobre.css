@@ -138,10 +138,14 @@
 }
 
 .sobre__card--item:nth-of-type(4)::before {
-    content: url(../../assets/img/icons/ficha-tech/formacao.svg);
+    content: url(../../assets/img/icons/ficha-tech/graduate.svg);
 }
 
 .sobre__card--item:nth-of-type(5)::before {
+    content: url(../../assets/img/icons/ficha-tech/formacao.svg);
+}
+
+.sobre__card--item:nth-of-type(6)::before {
     content: url(../../assets/img/icons/ficha-tech/area.svg);
 }
 

@@ -29,14 +29,6 @@ function carrosselInit() {
         techs: ["HTML5", "CSS3", "JavaScript", "React", "Figma"],
       },
       {
-        titulo: "WLS Tasklist",
-        link: "https://wls-tasklist.vercel.app/",
-        repositorio: "https://github.com/gc-barros/wls-tasklist",
-        detalhes:
-          "Resolução do desafio para estágio em desenvolvimento front-end da WLS Soluções. Aplicação de gerenciamento de lista de tarefas, com dados armazenados via API externa. É possível criar, buscar, editar e excluir tarefas.",
-        techs: ["HTML5", "Sass", "TypeScript", "Next", "React", "Figma"],
-      },
-      {
         titulo: "Cineperfil",
         link: "https://cineperfil.vercel.app/",
         repositorio: "https://github.com/gc-barros/cineperfil",
@@ -242,7 +234,7 @@ class Carousel {
       });
     } else {
       this.tamanhoSlide = this.getTamanhoSlide();
-      this.preparaSlides();
+      document.location.reload()
     }
   }
 
