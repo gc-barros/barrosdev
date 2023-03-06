@@ -146,17 +146,20 @@ class Carousel {
 
     this.slides = this.getListaSlides();
     this.indicadores = this.getListaIndicadores();
-    this.tamanhoSlide = this.getTamanhoSlide();
 
-    this.indiceDoSlideAtual = 0;
-
-    this.proximo.addEventListener("click", this.proximoSlide.bind(this));
-    this.anterior.addEventListener("click", this.slideAnterior.bind(this));
-
-    this.navegacao.addEventListener("click", this.pularParaSlide.bind(this));
-
-    this.preparaSlides();
-    this.renderizarDescricao();
+    setTimeout(() => {      
+      this.tamanhoSlide = this.getTamanhoSlide();
+  
+      this.indiceDoSlideAtual = 0;
+  
+      this.proximo.addEventListener("click", this.proximoSlide.bind(this));
+      this.anterior.addEventListener("click", this.slideAnterior.bind(this));
+  
+      this.navegacao.addEventListener("click", this.pularParaSlide.bind(this));
+  
+      this.preparaSlides();
+      this.renderizarDescricao();
+    }, 1000)
   }
 
   getListaSlides() {
